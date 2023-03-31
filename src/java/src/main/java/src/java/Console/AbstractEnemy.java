@@ -1,6 +1,6 @@
 package src.java.Console;
 
-public abstract class AbstractEnemy extends Character {
+public abstract class AbstractEnemy extends Character {  // 17/03/23
     private float opponentPower;
 
     public AbstractEnemy(String name, float health, float healthMax, float opponentPower) {

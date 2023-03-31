@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
-public class House {
+public class House {  // 18/03/23 // 19/03/23
     private String name;
     private float reduceDamage;
     private float buffAccuracy;

@@ -2,17 +2,18 @@ package src.java.Console;
 
 import java.util.Random;
 
-public class Pet {
+//public class Pet {
 
 
-    public enum enumPet {
-        OWL,
-        CAT,
-        RAT,
-        TOAD;
+public enum Pet {  // 17/03/23
+    OWL,
+    CAT,
+    RAT,
+    TOAD;
+}
 
 
-        private static final Random RANDOM = new Random();
+     /*/   private static final Random RANDOM = new Random();
 
         public static Pet.enumPet randomPet() {
             return values()[RANDOM.nextInt(values().length)];
@@ -27,3 +28,4 @@ public class Pet {
 
     }
 }
+*/

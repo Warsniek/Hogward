@@ -3,7 +3,7 @@ package src.java.Console;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Wizard extends Character {
+public class Wizard extends Character {   // 17/03/23 // 18/03/23
     private Pet pet;
     private Wand wand;
     private House house;

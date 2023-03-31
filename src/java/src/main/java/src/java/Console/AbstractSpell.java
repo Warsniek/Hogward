@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
-abstract class AbstractSpell {
+abstract class AbstractSpell {  // 17/03/23
     private String spellName;
     private float spellPower;
     private float spellAccuracy;

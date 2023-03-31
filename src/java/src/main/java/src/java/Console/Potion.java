@@ -1,6 +1,6 @@
 package src.java.Console;
 
-public class Potion {
+public class Potion {  // 17/03/23 // 18/03/23
     private String potionName;
     private float potionValue;
 

@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
-public class SortingHat {
-    public static void Choosehouse() {
-        List<House> houses = new ArrayList<>();
+import lombok.Getter;
+
+
+public class SortingHat {  // 18/03/23
+    public static void ChooseHouse() {
+        List<House> houses = new ArrayList<House>();
         houses.add(new House("Hufflepuff", 1, 1, 1, 1.5F));
         houses.add(new House("Slytherin", 1, 1, 1.5F, 1));
         houses.add(new House("Gryffindor", 0.5F, 1, 1, 1));

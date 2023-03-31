@@ -1,6 +1,6 @@
 package src.java.Console;
 
-public class Wand {
+public class Wand {   // 17/03/23
     private Core core;
     private int size;
 

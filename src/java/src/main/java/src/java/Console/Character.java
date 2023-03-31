@@ -1,6 +1,6 @@
 package src.java.Console;
 
-public abstract class Character {
+public abstract class Character { // 18/03/23  // 19/03/23  // 20/03/23
     private String name;
     private float health;
     private float healthMax;
@@ -23,7 +23,7 @@ public abstract class Character {
         return health;
     }
 
-    public void getHealth(float health) {
+    public void setHealth(float health) {
         this.health = health;
     }
 
@@ -38,9 +38,10 @@ public abstract class Character {
 
     public static void attack(Wizard wizard, AbstractEnemy abstractEnemy) {  //le sorcier attaque l'ennemi
         System.out.println("Vous attaquez le" + Levels.opponentName + "avec" + wizard.getWizardKnownSpells().get(Levels));
-        Main.promptEnterKey();
+        Jeu.promptEnterKey();
         abstractEnemy.setHealth(abstractEnemy.getHealth() - wizard.getWizardKnownSpells().get(Levels.spellUsed).getSpellPower);
         System.out.print("");
+        Jeu.promptEnterKey();
 
 
         //l'ennemi attaque le sorcier
