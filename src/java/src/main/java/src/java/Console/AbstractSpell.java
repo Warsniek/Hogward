@@ -1,4 +1,7 @@
-package Console;
+package src.java.Console;
+
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
@@ -18,21 +21,24 @@ abstract class AbstractSpell {
     public String getSpellName() {
         return spellName;
     }
-    public void setSpellName(String name){
+
+    public void setSpellName(String name) {
         this.spellName = spellName;
     }
 
-    public float getSpellPower(){
+    public float getSpellPower() {
         return spellPower;
     }
-    public void setSpellPower(float SpellPower){
+
+    public void setSpellPower(float SpellPower) {
         this.spellPower = spellPower;
     }
 
-    public float getSpellAccuracy(){
+    public float getSpellAccuracy() {
         return spellPower;
     }
-    public void setSpellAccuracy(float SpellAccuracy){
+
+    public void setSpellAccuracy(float SpellAccuracy) {
         this.spellAccuracy = spellAccuracy;
     }
 }

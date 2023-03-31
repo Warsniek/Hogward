@@ -1,46 +1,46 @@
-package Console;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.List;
+package src.java.Console;
+
 public abstract class Character {
     private String name;
     private float health;
     private float healthMax;
 
-    public Character(String name, float health, float healthMax){
-        this.name=name;
-        this.health=health;
-        this.healthMax=healthMax;
+    public Character(String name, float health, float healthMax) {
+        this.name = name;
+        this.health = health;
+        this.healthMax = healthMax;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public void getName(String name){
+
+    public void getName(String name) {
         this.name = name;
     }
 
-    public float getHealth(){
+    public float getHealth() {
         return health;
     }
-    public void getHealth(float health){
+
+    public void getHealth(float health) {
         this.health = health;
     }
 
-    public float getHealthMax(){
+    public float getHealthMax() {
         return healthMax;
     }
-    public void getHealthMax(float healthMax){
+
+    public void getHealthMax(float healthMax) {
         this.healthMax = healthMax;
     }
 
 
-    public static void attack(Wizard wizard, AbstractEnemy abstractEnemy){  //le sorcier attaque l'ennemi
+    public static void attack(Wizard wizard, AbstractEnemy abstractEnemy) {  //le sorcier attaque l'ennemi
         System.out.println("Vous attaquez le" + Levels.opponentName + "avec" + wizard.getWizardKnownSpells().get(Levels));
         Main.promptEnterKey();
         abstractEnemy.setHealth(abstractEnemy.getHealth() - wizard.getWizardKnownSpells().get(Levels.spellUsed).getSpellPower);
         System.out.print("");
-
 
 
         //l'ennemi attaque le sorcier

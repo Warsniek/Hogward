@@ -1,10 +1,11 @@
-package Console;
+package src.java.Console;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
 public class SortingHat {
-    public static  void Choosehouse() {
+    public static void Choosehouse() {
         List<House> houses = new ArrayList<>();
         houses.add(new House("Hufflepuff", 1, 1, 1, 1.5F));
         houses.add(new House("Slytherin", 1, 1, 1.5F, 1));
@@ -12,7 +13,6 @@ public class SortingHat {
         houses.add(new House("Ravenclaw", 1, 1.5F, 1, 1));
 
     }
-
 
 
     public static void main(String[] args) {
@@ -35,8 +35,8 @@ public class SortingHat {
                 System.out.println("you are Gryffindor");
                 break;
             //case 4:
-              //  System.out.println("Vyou are Ravenclaw");
-                //break;
+            //  System.out.println("Vyou are Ravenclaw");
+            //break;
             default:
                 System.out.println("Choix invalide");
                 break;

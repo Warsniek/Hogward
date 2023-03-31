@@ -1,9 +1,9 @@
-package Console;
+package src.java.Console;
+
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.List;
 
-public class Wizard  extends Character {
+public class Wizard extends Character {
     private Pet pet;
     private Wand wand;
     private House house;
@@ -12,12 +12,12 @@ public class Wizard  extends Character {
 
 
     public Wizard(String name, Pet pet, Wand wand, House house, Spell spell, Potion potion) {
-        super (name, 100, 500);
-        this.pet=pet;
-        this.wand=wand;
-        this.house=house;
-        this.wizardKnownSpells=new ArrayList<Spell>();
-        this.potions=new ArrayList<Potion>();
+        super(name, 100, 500);
+        this.pet = pet;
+        this.wand = wand;
+        this.house = house;
+        this.wizardKnownSpells = new ArrayList<Spell>();
+        this.potions = new ArrayList<Potion>();
 
         potions.add(potion);
         wizardKnownSpells.add(spell);
@@ -25,39 +25,43 @@ public class Wizard  extends Character {
 
     }
 
-    public void addPotion(Potion potion){
+    public void addPotion(Potion potion) {
         potions.add(potion);
     }
 
-    public void addSPell(Spell spell){
+    public void addSPell(Spell spell) {
         wizardKnownSpells.add(spell);
     }
 
-    public Pet getPet(){
+    public Pet getPet() {
         return pet;
     }
-    public void setPet(Pet pet){
+
+    public void setPet(Pet pet) {
         this.pet = pet;
     }
 
-    public Wand getWand(){
+    public Wand getWand() {
         return wand;
     }
-    public void setWand(Wand wand){
+
+    public void setWand(Wand wand) {
         this.wand = wand;
     }
 
-    public House getHouse(){
+    public House getHouse() {
         return house;
     }
-    public void setHouse(House house){
+
+    public void setHouse(House house) {
         this.house = house;
     }
 
-    public List<Spell> getWizardKnownSpells(){
+    public List<Spell> getWizardKnownSpells() {
         return wizardKnownSpells;
     }
-    public void setWizardKnownSpells(List<Spell> WizardKnownSpells){
+
+    public void setWizardKnownSpells(List<Spell> WizardKnownSpells) {
         this.wizardKnownSpells = wizardKnownSpells;
     }
 }
