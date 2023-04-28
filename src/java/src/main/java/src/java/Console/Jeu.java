@@ -27,7 +27,7 @@ public class Jeu {  // 17/03/23  // 18/03/23  // 20/03/23  // 21/03/23  // 24/03
 
     public static void hpBuff(Wizard wizard) {
         //wizard.setHealth((float) (wizard.getHealth() * 1.1));
-        wizard.sethealthMax((float) (wizard.getHealthMax() * 1.1));
+        wizard.setHealth((float) (wizard.getHealthMax() * 1.1));   ///sethealthmax pk fonctionne pas
     }
 
     public static void levelUP(Wizard wizard, List<Spell> spells) {
@@ -67,9 +67,9 @@ public class Jeu {  // 17/03/23  // 18/03/23  // 20/03/23  // 21/03/23  // 24/03
 
         Levels myLevel = new Levels();
         List<Enemy> enemies = new ArrayList<Enemy>();
-        enemies.add(new Enemy("Troll", 600, 600, 150));
-        enemies.add(new Enemy("Basilisk", 1000, 1000, 50));
-        enemies.add(new Enemy("Dementors", 6666, 6666, 666));
+        enemies.add(new Enemy("Troll", 400, 600, 150));
+        enemies.add(new Enemy("Basilisk", 800, 1000, 50));
+        enemies.add(new Enemy("Dementors", 600, 6666, 666));
         enemies.add(new Enemy("Death Eaters", 100, 1000, 50));
 
         bosses = new ArrayList<Boss>();
@@ -85,13 +85,13 @@ public class Jeu {  // 17/03/23  // 18/03/23  // 20/03/23  // 21/03/23  // 24/03
 
 
         spells = new ArrayList<Spell>();
-        spells.add(new Spell("Wingardium Leviosa", 0, 85, false, "You levitate an enemy, or an object"));
-        spells.add(new Spell("Accio", 50, 100, false, "You attract an enemy or an object to you"));
-        spells.add(new Spell("Depulso", 0, 65, false, "Throws enemy or object. Does no damage on it's own, but enemies and objects can be thrown into surfaces or other enemies"));
-        spells.add(new Spell("Expecto Patronum", 0, 100, false, "Conjures up a protective spirit that can act as a shield against certain creatures or as a messenger."));
-        spells.add(new Spell("Diffindo", 150, 80, false, "Slices through target to hit enemies behind them"));
-        spells.add(new Spell("Expelliarmus", 75, 100, false, "Long-range attack. Disarms most enemies and damages them."));
-        spells.add(new Spell("Sectumsempra", 120, 90, false, "Lacerates the target and causes severe haemorrhaging"));
+        spells.add(new Spell("Wingardium Leviosa", 50, 85, false, "You levitate an enemy, or an object"));
+        spells.add(new Spell("Accio", 115, 100, false, "You attract an enemy or an object to you"));
+        spells.add(new Spell("Depulso", 70, 65, false, "Throws enemy or object. Does no damage on it's own, but enemies and objects can be thrown into surfaces or other enemies"));
+        spells.add(new Spell("Expecto Patronum", 5, 100, false, "Conjures up a protective spirit that can act as a shield against certain creatures or as a messenger."));
+        spells.add(new Spell("Diffindo", 250, 80, false, "Slices through target to hit enemies behind them"));
+        spells.add(new Spell("Expelliarmus", 170, 100, false, "Long-range attack. Disarms most enemies and damages them."));
+        spells.add(new Spell("Sectumsempra", 200, 90, false, "Lacerates the target and causes severe haemorrhaging"));
 
 
         forbiddenSpells = new ArrayList<ForbiddenSpell>();

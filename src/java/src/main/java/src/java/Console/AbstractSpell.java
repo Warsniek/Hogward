@@ -13,7 +13,7 @@ abstract class AbstractSpell {  // 17/03/23
     private String spellDescription;
 
 
-    public AbstractSpell(String spellName, float spellPower, float spellAccuracy) {
+    public AbstractSpell(String spellName, float spellPower, float spellAccuracy, String spellDescription) {
         this.spellName = spellName;
         this.spellPower = spellPower;
         this.spellAccuracy = spellAccuracy;

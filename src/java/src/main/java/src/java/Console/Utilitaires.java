@@ -1,3 +1,5 @@
+package src.java.Console;
+
 import src.java.Console.Jeu;
 import src.java.Console.Wizard;
 

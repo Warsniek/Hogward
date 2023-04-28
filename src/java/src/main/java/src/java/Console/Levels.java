@@ -15,7 +15,7 @@ public class Levels {
     public void Level1(Wizard wizard, List<Enemy> enemies, List<Potion> potions) {
         //float opponentPower = enemies.get(0).getOpponentPower();
 
-        System.out.println("Vous entrez dans les toilettes pour ***** votre Tacos XXL que vous n'avez pas réussi à digérer");
+        System.out.println("Vous entrez dans les toilettes");
         Jeu.promptEnterKey();
         System.out.println("Soudain, un gros Troll des montagnes adultes apparaît en face de vous !! Il se met à vous attaquer");
         Jeu.promptEnterKey();
@@ -35,7 +35,7 @@ public class Levels {
                     scanner = new Scanner(System.in);
                     String menu3 = scanner.nextLine();
                     if (menu3.equalsIgnoreCase("y")) {
-                        System.out.println("Vous êtes une grosse merde");
+                        System.out.println("you're dumb");
                         Jeu.promptEnterKey();
                         System.out.println("GAME OVER");
                         System.exit(0);
@@ -265,14 +265,14 @@ public class Levels {
                     scanner = new Scanner(System.in);
                     String menu3 = scanner.nextLine();
                     if (menu3.equalsIgnoreCase("y")) {
-                        System.out.println("Vous êtes une grosse merde");
+                        System.out.println("You're dumb");
                         Jeu.promptEnterKey();
                         System.out.println("GAME OVER");
                         System.exit(0);
                     } else if (menu3.equalsIgnoreCase("n")) {
-                        System.out.println("Vous êtes raisonnable...");
+                        System.out.println("good idea...");
                     } else {
-                        System.out.println("Veuillez écrire le bon caractère");
+                        System.out.println("Please, try again");
                     }
                 } else if (menu == 2) {
                     if (wizard.getHealth() < 1000) {
@@ -280,10 +280,10 @@ public class Levels {
                             System.out.println("Your blood is so cold that you can't even open your bag to get a potion !");
                         }
                     } else {
-                        System.out.println("Votre santé est déjà pleine !!");
+                        System.out.println("You're health is at max !!");
                     }
                 } else if (menu == 1) {
-                    System.out.println("Quel sort voulez-vous lancer ?");
+                    System.out.println("Choose your spell ?");
                     Jeu.spellArsenal(wizard);
                     try {
                         spellUsed = scanner.nextInt();
