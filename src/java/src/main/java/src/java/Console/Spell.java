@@ -4,51 +4,29 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
-public class Spell {  // 17/03/23
-    private String name;
-    private float spellPower;
-    private float spellAccuracy;
-    private int forbidden;
+public class Spell extends AbstractSpell {
+    private boolean forbidden = false;
 
-    public Spell(String name, int spellPower, int spellAccuracy, int forbidden) {
-        this.name = name;
-        this.spellPower = spellPower;
-        this.spellAccuracy = spellAccuracy;
+    public Spell(String spellName, int spellPower, int spellAccuracy, boolean forbidden, String spellDescription) {
+        super(spellName, spellPower, spellAccuracy, spellDescription);
         this.forbidden = forbidden;
-
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public float getSpellPower() {
-        return spellPower;
-    }
-
-    public void setSpellPower(float spellPower) {
-        this.spellPower = spellPower;
-    }
-
-    public float getSpellAccuracy() {
-        return spellAccuracy;
-    }
-
-    public void setSpellAccuracy(float spellAccuracy) {
-        this.spellPower = spellAccuracy;
-    }
-
-    public int getForbidden() {
+    public boolean getForbidden() {
         return forbidden;
     }
 
-    public void setForbidden(int forbidden) {
+    public void setForbidden(boolean forbidden) {
         this.forbidden = forbidden;
     }
 
-
+    public static List<Spell> SetUpSpells() {
+        List<Spell> spells = new ArrayList<Spell>();
+        spells.add(new Spell("Wingardium Leviosa", 10, 100, false, null));
+        spells.add(new Spell("Accio", 10, 100, false, null));
+        spells.add(new Spell("Expecto Patronum", 10, 100, false, null));
+        spells.add(new Spell("Sectumsempra", 10, 100, false, null));
+        spells.add(new Spell("Expelliarmus", 10, 100, false, null));
+        return spells;
+    }
 }

@@ -27,7 +27,10 @@ public class Potion {  // 17/03/23 // 18/03/23
     }
 
 
-    public static void healthPotion(Wizard wizard, float potion) {
-        wizard.sethealth(wizard.getHealth() + potion * wizard.getHouse().getBuffPotion());
+    public static void drinkPotion(Wizard wizard, float potionValue) {
+        wizard.setHealth(wizard.getHealth() + potionValue * wizard.getHouse().getBuffPotion());
+        if (wizard.getHealth() > wizard.getHealthMax()) {
+            wizard.setHealth(wizard.getHealthMax());
+        }
     }
 }

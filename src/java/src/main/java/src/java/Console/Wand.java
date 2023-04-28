@@ -12,5 +12,21 @@ public class Wand {   // 17/03/23
         // return core.get(randcore);
     }
 
+    public Core getCore() {
+        return core;
+    }
+
+    public void setCore(Core core) {
+        this.core = core;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
 }
 

@@ -10,12 +10,14 @@ abstract class AbstractSpell {  // 17/03/23
     private String spellName;
     private float spellPower;
     private float spellAccuracy;
+    private String spellDescription;
 
 
     public AbstractSpell(String spellName, float spellPower, float spellAccuracy) {
         this.spellName = spellName;
         this.spellPower = spellPower;
         this.spellAccuracy = spellAccuracy;
+        this.spellDescription = spellDescription;
     }
 
     public String getSpellName() {
@@ -40,6 +42,14 @@ abstract class AbstractSpell {  // 17/03/23
 
     public void setSpellAccuracy(float SpellAccuracy) {
         this.spellAccuracy = spellAccuracy;
+    }
+
+    public String getSpellDescription() {
+        return spellDescription;
+    }
+
+    public void setSpellDescription(String spellDescription) {
+        this.spellDescription = spellDescription;
     }
 }
 

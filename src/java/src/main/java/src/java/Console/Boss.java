@@ -7,15 +7,17 @@ import java.util.Scanner;
 import java.util.List;
 
 public class Boss extends AbstractEnemy {  // 19/03/23  // 20/03/23
+    private Wand wand;
     private List<Spell> bossKnownSpells;
-    private List<ForbiddenSpell> forbiddenSpells;
+    private List<ForbiddenSpell> bossKnownForbiddenSpells;
 
     public Boss(String name, float health, float healthMax, float enemyPower, Spell spell, ForbiddenSpell forbiddenSpell) {
         super(name, health, healthMax, enemyPower);
         this.bossKnownSpells = new ArrayList<Spell>();
-        this.forbiddenSpells = new ArrayList<ForbiddenSpell>();
+        this.bossKnownForbiddenSpells = new ArrayList<ForbiddenSpell>();
+        this.wand = wand;
         bossKnownSpells.add(spell);
-        forbiddenSpells.add(forbiddenSpell);
+        bossKnownForbiddenSpells.add(forbiddenSpell);
     }
 
     public void addSpell(Spell spell) {
@@ -23,27 +25,32 @@ public class Boss extends AbstractEnemy {  // 19/03/23  // 20/03/23
     }
 
     public void addForbiddenSpell(ForbiddenSpell forbiddenSpell) {
-        forbiddenSpells.add(forbiddenSpell);
+        bossKnownForbiddenSpells.add(forbiddenSpell);
     }
 
-    public List<Spell> getKnownSpells() {
+    public List<Spell> getBossKnownSpells() {
         return bossKnownSpells;
     }
 
-    public void setKnownSpells(List<Spell> BossKnownSpells) {
-        this.bossKnownSpells = BossKnownSpells;
+    public void setBossKnownSpells(List<Spell> bossKnownSpells) {
+        this.bossKnownSpells = bossKnownSpells;
     }
 
-    public List<ForbiddenSpell> forbiddenSpells() {
-        return forbiddenSpells;
+    public List<ForbiddenSpell> getBossKnownForbiddenSpells() {
+        return bossKnownForbiddenSpells;
     }
 
-    public void setForbiddenSpells(List<ForbiddenSpell> forbiddenSpells) {
-        this.forbiddenSpells = forbiddenSpells;
+    public void setBossKnownForbiddenSpells(List<ForbiddenSpell> bossKnownForbiddenSpells) {
+        this.bossKnownForbiddenSpells = bossKnownForbiddenSpells;
     }
 
-
-    public void attack(Character c) {
+    public Wand getWand() {
+        return wand;
     }
+
+    public void setWand(Wand wand) {
+        this.wand = wand;
+    }
+
 }
 
